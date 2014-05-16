@@ -15,7 +15,7 @@ trap shutdown HUP INT QUIT ABRT KILL ALRM TERM TSTP
 
 export CATALINA_HOME=/opt/tomcat/
 export JAVA_HOME=/opt/java/
-export JAVA_OPTS="$JAVA_OPTS -Dmidpoint.home=/opt/midpoint -XX:MaxPermSize=256mi -javaagent:/opt/fusionreactor/instance/1/fusionreactor.jar=address=8089"
+export JAVA_OPTS="$JAVA_OPTS -Dmidpoint.home=/opt/midpoint -XX:MaxPermSize=256m -javaagent:/opt/fusionreactor/instance/1/fusionreactor.jar=address=8089"
 
 cd /opt/tomcat/bin/
 ./startup.sh
